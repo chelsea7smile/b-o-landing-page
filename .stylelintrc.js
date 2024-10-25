@@ -3,5 +3,12 @@ module.exports = {
   plugins: [
     "stylelint-scss"
   ],
-  rules: {}
+  rules: {
+    "scss/operator-no-unspaced": [
+      true,
+      {
+        "ignore": ["inside-function"]
+      }
+    ]
+  }
 };
